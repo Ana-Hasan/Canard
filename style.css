@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+.blurred-box {
+    width: 1400px;
+    height: 650px;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 15px;
+    backdrop-filter: blur(15px); 
+    -webkit-backdrop-filter: blur(15px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+/* Border Animation */
+.blurred-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 2px;
+    background: linear-gradient(45deg, #2c2e7e, #595eff, #ebebf3, #000807);
+    background-size: 300% 300%;
+    animation: borderMove 5s linear infinite;
+    z-index: 1; /* Place it above the box */
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude; /* Mask out the inside area of the border */
+  }
+  /* Text Content Inside the Box */
+  .blurred-box div {
+    z-index: 2; /* Ensure text appears above the border */
+  }
+
+  .blurred-box h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .blurred-box p {
+    font-size: 1.2em;
+  }
+
+  /* Border Animation Keyframes */
+  @keyframes borderMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
