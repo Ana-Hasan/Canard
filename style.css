@@ -43,11 +43,11 @@ body {
     z-index: 1; /* Place it above the box */
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
-    mask-composite: exclude; /* Mask out the inside area of the border */
+    mask-composite: exclude;
   }
-  /* Text Content Inside the Box */
+  
   .blurred-box div {
-    z-index: 2; /* Ensure text appears above the border */
+    z-index: 2;
   }
 
   .blurred-box h1 {
