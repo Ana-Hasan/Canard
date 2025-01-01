@@ -11,6 +11,8 @@ body {
     align-items: center;
     background-size: cover;
     font-family: Arial, sans-serif;
+    /* background-image: url(DIFFUSAL\ ROOM-2-1.png); */
+    background-size: contain;
 }
 .blurred-box {
     width: 1400px;
@@ -37,7 +39,7 @@ body {
     height: 100%;
     border-radius: 15px;
     padding: 2px;
-    background: linear-gradient(45deg, #2c2e7e, #595eff, #ebebf3, #000807);
+    background: linear-gradient(45deg, #8a5ef1, #efefef, #8b36fa, #000807);
     background-size: 300% 300%;
     animation: borderMove 5s linear infinite;
     z-index: 1; /* Place it above the box */
