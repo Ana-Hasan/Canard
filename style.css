@@ -86,6 +86,7 @@ body {
   margin-bottom: 5px;
   cursor: none;
   transition: all 0.25s;
+  padding: 10px;
  }
  .custom-cursor {
   position: fixed; 
@@ -117,4 +118,26 @@ body {
   height: 140px;
   width: 160px;
   transition: 0.25s;
+}
+ .canard-barcode { 
+  position: absolute;
+  top: 690px;
+  bottom: 30px;
+  right: 13px;
+  border-color: #8b36fa;
+  background-color: #34214d;
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: solid;
+  z-index: 9999;
+  width: 1150px;
+
+}
+.canard-barcode p {
+  right: 600px;
+  position: absolute;
+  top: 25px;
+  color: aliceblue;
+  font-size: 20px;
+  font-family: Orbitron ;
 }
