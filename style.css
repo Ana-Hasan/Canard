@@ -86,7 +86,7 @@ body {
   margin-bottom: 5px;
   cursor: none;
   transition: all 0.25s;
-  padding: 10px;
+  padding: 1px;
  }
  .custom-cursor {
   position: fixed; 
@@ -95,7 +95,7 @@ body {
   background: radial-gradient(circle, rgb(152, 9, 255), rgba(0, 255, 255, 0));
   border-radius: 50%;
   pointer-events: none; 
-  z-index: 9999; 
+  z-index: 1000000; 
   transform: translate(-50%, -50%); 
   animation: cursor-pulse 1.5s infinite;
 }
@@ -113,11 +113,6 @@ body {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
   }
-}
-.folder img:hover {
-  height: 140px;
-  width: 160px;
-  transition: 0.25s;
 }
  .canard-barcode { 
   position: absolute;
@@ -140,4 +135,72 @@ body {
   color: aliceblue;
   font-size: 20px;
   font-family: Orbitron ;
+}
+
+#popup-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+#popup-panel.hidden {
+  display: none;
+}
+
+.popup-content {
+  background-color: #34214d; /* Purple background */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 950px;
+  height: 600px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: Orbitron;
+  font-size: 22px;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content button {
+  position: absolute;
+  top: 600px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #8a5ef1;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Orbitron;
+  cursor: none;
+}
+
+.popup-content button:hover {
+  background: #c0392b;
+  cursor: none;
+}
+
+.footage-1 {
+  height: 250px;
+  width: 290px;
+  position: absolute;
+  left: 330px;
+  top: 180px;
+}
+.footage-2 {
+  height: 250px;
+  width: 290px;
+  position: absolute;
+  top: 350px;
+  right: 330px;
 }
