@@ -11,7 +11,7 @@ body {
     align-items: center;
     background-size: cover;
     font-family: Arial, sans-serif;
-    /* background-image: url(DIFFUSAL\ ROOM-2-1.png); */
+    background-image: url(background.png); 
     background-size: contain;
 }
 .blurred-box {
