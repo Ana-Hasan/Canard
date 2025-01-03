@@ -85,6 +85,7 @@ body {
   margin-right: 40px;
   margin-bottom: 5px;
   cursor: none;
+  transition: all 0.25s;
  }
  .custom-cursor {
   position: fixed; 
@@ -115,4 +116,5 @@ body {
 .folder img:hover {
   height: 140px;
   width: 160px;
+  transition: 0.25s;
 }
