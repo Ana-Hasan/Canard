@@ -97,7 +97,7 @@ body {
   pointer-events: none; 
   z-index: 1000000; 
   transform: translate(-50%, -50%); 
-  animation: cursor-pulse 1.5s infinite;
+  animation: cursor-pulse 2s infinite;
 }
 
 @keyframes cursor-pulse {
@@ -107,7 +107,7 @@ body {
   }
   50% {
     transform: translate(-50%, -50%) scale(1.5);
-    opacity: 0.5;
+    opacity: 2;
   }
   100% {
     transform: translate(-50%, -50%) scale(1);
@@ -191,8 +191,8 @@ body {
 }
 
 .footage-1 {
-  height: 250px;
-  width: 290px;
+  height: 260px;
+  width: 310px;
   position: absolute;
   left: 330px;
   top: 180px;
@@ -203,4 +203,21 @@ body {
   position: absolute;
   top: 350px;
   right: 330px;
+}
+.barcode img {
+  height: 55px;
+  width: 120px;
+}
+.barcode {
+  position: absolute;
+  top: 690px;
+  bottom: 30px;
+  right: 13px;
+  z-index: 9999;
+  width: 1150px;
+}
+.barcode p {
+  left: 1000px;
+  position: absolute;
+  top: 12px;
 }
